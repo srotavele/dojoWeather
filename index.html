@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dojoWeather</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Dojo<span class="reb_text">Weather</span></h1>
+            <div class="nav_bar_city">
+                <a onclick="loadalert()" href="">Burbank</a>
+                <a onclick="loadalert()" href="">Chicago</a>
+                <a onclick="loadalert()" href="">Dallas</a>
+            </div>
+        </header>
+        <div class="main_content">
+            <div class="top_bar">
+                <div class="top_bar_left">
+                    <h1>San Jose</h1>
+                </div>
+                <div class="top_bar_right">
+                    <h2>Show temperature in</h2>
+                    <div class="temp_dropmenu">
+                        <select name="deg" id="temperature">
+                            <option value="C">C</option>
+                            <option value="F">F</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="forecast_boxes">
+                <div class="forecast_model">
+                    <h2>Today</h2>
+                    <img class="images" src="/images/some_rain.png">
+                    <p>some rain</p>
+                    <div class="hi_lo_row">
+                        <h3 class="hi">23.9°</h3>
+                        <h3 class="lo">18.3°</h3>
+                    </div>
+                </div>
+                <div class="forecast_model">
+                    <h2>Tomorrow</h2>
+                    <img class="images" src="/images/some_sun.png">
+                    <p>some sun</p>
+                    <div class="hi_lo_row">
+                        <h3 class="hi">26.7°</h3>
+                        <h3 class="lo">18.9</h3>
+                    </div>
+                </div>
+                <div class="forecast_model">
+                    <h2>Friday</h2>
+                    <img class="images" src="/images/some_clouds.png">
+                    <p>some clouds</p>
+                    <div class="hi_lo_row">
+                        <h3 class="hi">20.6°</h3>
+                        <h3 class="lo">16.1°</h3>
+                    </div>
+                </div>
+                <div class="forecast_model">
+                    <h2>Saturday</h2>
+                    <img class="images" src="/images/some_sun.png">
+                    <p>some sun</p>
+                    <div class="hi_lo_row">
+                        <h3 class="hi">25.6°</h3>
+                        <h3 class="lo">21.1°</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- END OF WEATHER PAGE / START COOKIE WALL -->
+        <div class="cookie_hate">
+            <img src="images/cookie.png" alt="cookie_hate">
+            <div class="cookie_msg">
+                <h2>STOP! Cookie Time</h2>
+                <div class="cookie_msg_rt">
+                    <p>We use cookies (sadly not the edible ones) to personalize content and ads, provide social media
+                        features and to analyze our traffic.<a href="#">  Read More..</a></p>
+                    <button onclick="cookie_accept()">I Accept</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
